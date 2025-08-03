@@ -51,16 +51,6 @@ platform
 
 flatpak and wine installed on your system (for relevant tabs)
 
-🌌 Roadmap
- Flatpak support
-
- Wine integration
-
- App launching shortcuts
-
- Theme system?
-
- Plugin support?
 
 💬 Community
 Got questions, ideas, memes, or bug reports? Join the official Discord:
