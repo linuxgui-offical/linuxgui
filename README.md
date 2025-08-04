@@ -1,69 +1,77 @@
-Absolutely! Here's your updated README with the screenshot section removed and your Discord server link added under a new "💬 Community" section:
+LinuxGUI - Linux App & System Manager
+LinuxGUI is a Python Tkinter-based desktop app to help you easily manage your Linux apps and system with a sleek, user-friendly interface. It includes tools to uninstall Linux and Wine apps, run common system commands, and create custom command buttons — all without needing to open the terminal!
 
-🐧 LinuxGUI
-A beginner-friendly and nerd-approved GUI for managing Linux tools like Wine, Flatpak, system info, and more — no terminal required.
+Features
+Linux Apps Tab
 
-🚀 Features
-🎮 Wine GUI — install and launch .exe files like a pro
+Search and browse installed Linux desktop apps.
 
-📦 Flatpak Installer — browse and install Flatpaks without commands
+Uninstall apps via apt or flatpak automatically.
 
-🖥️ System Info — nerd tab shows hardware, memory, CPU usage, and more
+Delete app desktop entries or app files manually.
 
-🧰 App Manager — organize and launch your installed programs
+Wine Apps Tab
 
-🧼 Clean-up Tools — easily remove junk files and wine bloat
+Launch Wine’s built-in Windows program uninstaller GUI.
 
-✨ Modern, themed UI — dark mode with cyberpunk-ish vibes
+Commands Tab
 
-🐛 Error Handling — more oops-proof than your average script
+Run quick system commands like update, upgrade, system info, network tests, and more.
 
-🧪 Why This Exists
-Linux has powerful tools… but some of them are hidden behind cryptic commands or weird workarounds. LinuxGUI wraps all that in a single, clean, hackable interface that just works.
+Add and manage your own custom command buttons.
 
-Whether you're a:
+View command output in a scrollable window.
 
-🐣 New Linux user scared of the terminal
+Live System Info
 
-🧙 Power user who wants speed
+Displays CPU, RAM, disk usage, network stats, uptime, and CPU temperature.
 
-🎮 Gamer trying to launch .exe games
+Clean, readable terminal-like dark theme with glow effects.
 
-LinuxGUI helps you do it easier, faster, and with less "what the hell does that error mean?"
+Requirements
+Python 3.6+
 
-💻 Install Instructions
-🐍 From source
+Tkinter (usually included with Python)
+
+psutil (pip install psutil)
+
+sudo privileges for uninstalling packages and running system commands.
+
+Wine installed if you want to manage Windows apps.
+
+Installation & Running
+Clone or download this repository.
+
+Install dependencies:
+
 bash
 Copy
 Edit
-git clone https://github.com/backspacewherehorrors/linuxgui.git
-cd linuxgui
-pip install -r requirements.txt
+pip install psutil
+Run the app:
+
+bash
+Copy
+Edit
 python3 linuxgui.py
-🛠️ Requirements
-Python 3.8+
+Usage
+Linux Apps Tab: Search apps by name, select one, and click "Uninstall Selected" to choose how to remove it.
 
-Tkinter (usually included)
+Wine Apps Tab: Click the button to open Wine’s Add/Remove Programs window.
 
-psutil
+Commands Tab: Click buttons to run commands. Add your own custom commands with the button at the bottom.
 
-platform
+You can view live system resource stats in the interface.
 
-flatpak and wine installed on your system (for relevant tabs)
+Notes
+The app attempts to detect package managers (apt, flatpak) for uninstalling apps but may require manual deletion for some apps.
 
+Running system commands and uninstall operations may require your user password for sudo access.
 
-💬 Community
-Got questions, ideas, memes, or bug reports? Join the official Discord:
-👉 discord.gg/gEgGHcbwGK
+Commands run in a safe, confirmed manner with visible output and progress.
 
-🙌 Contributing
-Pull requests, ideas, bug reports, or sarcastic remarks — all welcome.
+Contributing
+Feel free to open issues or pull requests! Suggestions for more commands, package managers, or UI improvements are welcome.
 
-⭐️ Give It A Star!
-If you like the project, give it a ⭐️ to help others find it!
-
-📄 License
-MIT — use it, hack it, fork it, break it. But please tell them its a modified version :D
-
-
-You can paste this directly into your README.md. Want help posting it to Reddit next, or want a better Discord invite banner/button?
+License
+This project is licensed under the MIT License.
