@@ -1,5 +1,3 @@
-can you make a readme? for
-(linuxgui code)
 #!/usr/bin/env python3
 import os
 import shutil
